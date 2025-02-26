@@ -15,23 +15,28 @@
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
-  --secondary: #64748b;
-  --dark: #0f172a;
-  --light: #f8fafc;
-  --gradient: linear-gradient(135deg, #2563eb, #7c3aed);
+  --primary: #006D77;      /* Deep Teal - Main brand color */
+  --primary-dark: #065A61; /* Darker Teal - For hover states */
+  --secondary: #83A4B4;    /* Muted Blue-Gray - For secondary elements */
+  --accent: #FF9F1C;       /* Bright Mango - For highlights and important elements */
+  --accent-dark: #F08700;  /* Darker Mango - For hover states */
+  --accent-light: #FFB649; /* Light Mango - For subtle highlights */
+  --dark: #2C3539;         /* Charcoal - For text */
+  --light: #FAFBFC;        /* Off-White - For backgrounds */
+  --surface: #F6F8FA;      /* Light Gray - For cards and sections */
+  --gradient: linear-gradient(135deg, #006D77, #83A4B4);
   --font-primary: 'Space Grotesk', sans-serif;
   --font-secondary: 'Inter', sans-serif;
+  --heading-color: #2C3539;
+  --text-color: #4A5568;
+  --border-color: rgba(0, 109, 119, 0.1);
+  --hover-color: rgba(0, 109, 119, 0.05);
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #3498db; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -75,14 +80,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--accent);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
+  color: var(--accent-dark);
 }
 
 h1,
@@ -642,7 +646,7 @@ section,
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--accent-color);
+  background: var(--accent);
   display: inline-block;
 }
 
@@ -1868,11 +1872,21 @@ section,
 }
 
 .agent-skills span {
-  background: rgba(37, 99, 235, 0.1);
-  color: var(--primary);
+  background: rgba(255, 159, 28, 0.1); /* Lighter mango background */
+  color: var(--accent-dark);           /* Darker mango text */
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.875rem;
+  font-weight: 500;                    /* Make text slightly bolder */
+  margin: 0.25rem;
+  display: inline-block;
+  border: 1px solid rgba(255, 159, 28, 0.2); /* Subtle border */
+}
+
+.agent-skills span:hover {
+  background: rgba(255, 159, 28, 0.15);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
 }
 
 /* Chat Interface */
@@ -2253,8 +2267,9 @@ section,
 }
 
 .metric h4 {
-  color: #5682a3;
-  font-size: 2rem;
+  color: var(--accent);
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -2281,7 +2296,7 @@ section,
 }
 
 .case-highlights li i {
-  color: #5682a3;
+  color: var(--accent);
   margin-right: 0.5rem;
 }
 
@@ -2356,7 +2371,7 @@ section,
   background: rgba(255, 255, 255, 0.95);
   padding: 0.5rem;
   font-size: 0.85rem;
-  color: #5682a3;
+  color: var(--accent);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -2486,8 +2501,8 @@ section,
 }
 
 .step i {
+  color: var(--accent);
   font-size: 1.5rem;
-  color: #5682a3;
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
@@ -2555,4 +2570,88 @@ section,
 
 .close-quote:hover {
   color: var(--heading-color);
+}
+
+/* WhatsApp CTA Button */
+.cta .btn-primary {
+  background-color: #25D366;
+  border-color: #25D366;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.cta .btn-primary:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.2);
+}
+
+.cta .btn-primary i {
+  font-size: 1.25rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 109, 119, 0.15);
+}
+
+/* Agent Card Buttons */
+.agent-card .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.agent-card .btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Back to Info Button */
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Hero Section Button */
+.hero .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  padding: 0.8rem 1.5rem;
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Keep WhatsApp button unchanged */
+.cta .btn-primary {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+.cta .btn-primary:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
 }
