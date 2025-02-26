@@ -2183,3 +2183,19 @@ section,
     height: 120px;
   }
 }
+
+.agent-intro {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: rgba(86, 130, 163, 0.05);
+  border-left: 3px solid #5682a3;
+  border-radius: 0 8px 8px 0;
+}
+
+.agent-intro p {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-style: italic;
+  margin: 0;
+}
