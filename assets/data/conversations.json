@@ -1,0 +1,277 @@
+{
+  "alex": {
+    "title": "Factory Operations Demo",
+    "chats": {
+      "direct": {
+        "title": "Direct Chat",
+        "messages": [
+          {
+            "sender": "user",
+            "text": "Hi Alex, can you give me today's production update?",
+            "timestamp": "9:00 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Here's today's production summary:\n- Production target: 3,000 units\n- Completed: 2,450 units (82%)\n- Quality checks: All passed\n- Active maintenance issues: 2\n\nWould you like details on the maintenance issues?",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "user",
+            "text": "Yes, please show me the maintenance issues",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Here are the active maintenance issues:\n\n1. Assembly Line 2:\n- Issue: Conveyor belt misalignment\n- Status: In progress\n- ETA: 2 hours\n- Impact: Minor slowdown\n\n2. Packaging Unit:\n- Issue: Sensor calibration\n- Status: Scheduled\n- ETA: Today EOD\n- Impact: Quality checks taking longer\n\nShould I escalate any of these?",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "user",
+            "text": "What's the production impact of the conveyor belt issue?",
+            "timestamp": "9:03 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "The conveyor belt issue on Assembly Line 2 has resulted in:\n\n- 15% slower line speed\n- Approximately 200 units delayed\n- No quality issues reported\n\nI've already:\n1. Notified maintenance team (responding in 30 mins)\n2. Adjusted line speed to prevent jams\n3. Reallocated workers to maintain output\n\nWould you like me to show you the adjusted production schedule?",
+            "timestamp": "9:03 AM"
+          }
+        ]
+      },
+      "monitoring": {
+        "title": "Team Monitoring",
+        "messages": [
+          {
+            "sender": "agent",
+            "text": "📊 Production Shift Report #1\n\nShift Status:\n- Line 1: 92% efficiency\n- Line 2: 78% efficiency (maintenance)\n- Line 3: 88% efficiency\n\nTotal Units: 2,450/3,000\nQuality Pass Rate: 99.8%\nStaff Attendance: 45/48",
+            "timestamp": "8:00 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "⚠️ Maintenance Alert\n\nIssue: Line 2 Conveyor\nImpact: 15% slowdown\nAction Taken:\n- Maintenance team notified\n- Speed adjusted\n- Staff reallocated\n\nETA for resolution: 2 hours",
+            "timestamp": "9:15 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "🔄 Maintenance Update\n\nLine 2 Conveyor:\n- Repair completed\n- Speed restored\n- Production normalized\n\nTime lost: 1.8 hours\nRecovery plan activated",
+            "timestamp": "11:00 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "📈 End of Shift Report\n\nProduction Achieved: 2,950 units\nQuality Metrics: All passed\nEfficiency: 86% (avg)\n\nNext Shift Handover:\n- No pending issues\n- All lines operational\n- Materials stocked",
+            "timestamp": "4:00 PM"
+          }
+        ]
+      }
+    }
+  },
+  "arun": {
+    "title": "Field Marketing Demo",
+    "chats": {
+      "direct": {
+        "title": "Direct Chat",
+        "messages": [
+          {
+            "sender": "agent",
+            "text": "Good morning! Could you update me on your plan for today?",
+            "timestamp": "9:00 AM"
+          },
+          {
+            "sender": "user",
+            "text": "Yes, I'll be making college visits today",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Great! I'll help you plan these visits. Could you share:\n1. Which colleges are you visiting?\n2. Their locations?\n3. Who are your points of contact?",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "user",
+            "text": "I'm visiting IIIT Bangalore first",
+            "timestamp": "9:03 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Got it - IIIT Bangalore. What time is your meeting and who will you be meeting there?",
+            "timestamp": "9:03 AM"
+          },
+          {
+            "sender": "user",
+            "text": "Meeting Prof. Sharma at 11 AM in the Computer Science department",
+            "timestamp": "9:04 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Perfect! I've noted:\n- Location: IIIT Bangalore\n- Time: 11 AM\n- Contact: Prof. Sharma, CS Dept\n\nAre there any other colleges on your schedule today? Also, could you share your live location when you start?",
+            "timestamp": "9:04 AM"
+          },
+          {
+            "sender": "user",
+            "text": "Yes, I'm also visiting Christ University at 2 PM. Starting now, sharing my location.",
+            "timestamp": "10:30 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "📍 Location received - you're 15 mins away from IIIT Bangalore.\n\nI've updated your schedule:\n1. IIIT Bangalore - 11 AM\n2. Christ University - 2 PM\n\nI'll send you traffic updates and remind you 30 mins before each meeting.\n\nI've also shared this plan in the team monitoring group.",
+            "timestamp": "10:30 AM"
+          }
+        ]
+      },
+      "monitoring": {
+        "title": "Team Monitoring",
+        "messages": [
+          {
+            "sender": "agent",
+            "text": "📋 Daily Plan Update\n\nTeam Member: Marketing Executive\nToday's Schedule:\n\n1. IIIT Bangalore\n   - Time: 11 AM\n   - Contact: Prof. Sharma (CS Dept)\n   - Objective: Product Presentation\n\n2. Christ University\n   - Time: 2 PM\n   - Location: Main Campus\n   - Objective: Initial Discussion\n\n📍 Live tracking enabled\nEstimated coverage: 2 major institutions",
+            "timestamp": "9:15 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "🎯 Visit Update - IIIT Bangalore\n\nStatus: Completed ✅\nKey Outcomes:\n- Successful product presentation\n- Requirement: Detailed proposal\n- Timeline: Due next week\n- Potential Value: High\n\n📍 Currently en route to Christ University\nETA: 25 minutes",
+            "timestamp": "12:45 PM"
+          },
+          {
+            "sender": "agent",
+            "text": "🎯 Visit Update - Christ University\n\nStatus: Completed ✅\nKey Outcomes:\n- Positive initial discussion\n- Next Step: Product demo\n- Timeline: Next month\n- Interest Level: High\n\n📊 Daily Summary:\n- Visits Completed: 2/2\n- New Opportunities: 2\n- Follow-up Tasks Created: 2",
+            "timestamp": "3:30 PM"
+          },
+          {
+            "sender": "agent",
+            "text": "📝 Task Creation Alert\n\nNew tasks created:\n\n1. IIIT Bangalore Proposal\n   - Owner: Marketing Team\n   - Deadline: Next week\n   - Priority: High\n\n2. Christ University Demo\n   - Timeline: Next month\n   - Status: Planning\n   - Type: Product Demo\n\n👥 Team members have been notified\nPlease acknowledge and update task status in project tracker.",
+            "timestamp": "4:00 PM"
+          }
+        ]
+      }
+    }
+  },
+  "jhansi": {
+    "title": "Social Work Demo",
+    "chats": {
+      "direct": {
+        "title": "Direct Chat",
+        "messages": [
+          {
+            "sender": "user",
+            "text": "Hi Jhansi, can you help with today's survey status?",
+            "timestamp": "9:00 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "नमस्ते! Here's today's survey update:\n- Surveys Completed: 28/30\n- Beneficiaries Reached: 145\n- Applications Processed: 42\n- Pending Follow-ups: 5\n\nWould you like me to share the detailed responses in any specific language?",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "user",
+            "text": "Yes, what are the key findings from today's surveys?",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Key Survey Findings:\n\n1. Primary Needs Identified:\n- Healthcare access: 65%\n- Education support: 45%\n- Employment assistance: 40%\n\n2. Demographic Breakdown:\n- Women: 60%\n- Youth: 25%\n- Elderly: 15%\n\n3. Urgent Cases:\n- 3 medical assistance needs\n- 2 education sponsorship requests\n\nI can provide details in हिंदी, తెలుగు, or other languages if needed.",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "user",
+            "text": "What follow-up actions are needed?",
+            "timestamp": "9:03 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Follow-up Action Plan:\n\n Medical Cases:\n- 2 hospital appointments scheduled\n- 1 pending documentation\n\n📚 Education Support:\n- 5 applications ready for review\n- 2 school meetings tomorrow\n\n📋 General Follow-ups:\n- 15 benefit applications to process\n- 8 home visits scheduled\n\nShall I prioritize any specific category?",
+            "timestamp": "9:03 AM"
+          }
+        ]
+      },
+      "monitoring": {
+        "title": "Team Monitoring",
+        "messages": [
+          {
+            "sender": "agent",
+            "text": "🌟 Daily Outreach Report\n\nBeneficiaries Visited: 28\nApplications Processed: 42\nUrgent Cases: 5\n\nLanguages Used Today:\n- Hindi: 45%\n- Telugu: 30%\n- English: 25%",
+            "timestamp": "9:00 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "🏥 Healthcare Update\n\nMedical Cases:\n- Appointments Scheduled: 2\n- Documentation Pending: 1\n- Follow-ups Complete: 3\n\nHospital Coordination:\n- St. Johns: 2 cases\n- City Hospital: 1 case",
+            "timestamp": "11:30 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "📚 Education Support Status\n\nSchool Applications:\n- Submitted: 5\n- Under Review: 3\n- Approved: 2\n\nSchool Meetings:\n- Scheduled: 2 (tomorrow)\n- Completed: 3 (today)",
+            "timestamp": "2:00 PM"
+          },
+          {
+            "sender": "agent",
+            "text": "📋 End Day Report\n\nTotal Interactions: 145\nCases Resolved: 38\nNew Applications: 42\n\nTomorrow's Priority:\n- 3 medical follow-ups\n- 2 school meetings\n- 5 home visits",
+            "timestamp": "4:30 PM"
+          }
+        ]
+      }
+    }
+  },
+  "meghna": {
+    "title": "Field Team Coordination Demo",
+    "chats": {
+      "direct": {
+        "title": "Direct Chat",
+        "messages": [
+          {
+            "sender": "user",
+            "text": "Hi Meghna, how are the field visits progressing?",
+            "timestamp": "9:00 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Hello! Here's the current field status:\n- Today's Visits: 15/20 completed\n- Team Location: 4 teams in North Zone\n- Critical Issues: 2 (escalated to manager)\n- Recurring Issue: Equipment calibration at Site B\n\n⚠️ Alert: Team 3 reporting heavy traffic, may delay next visit.\nWould you like me to adjust the schedule?",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "user",
+            "text": "Yes, tell me about the critical issues first",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Critical Issues Report:\n\n1. Site B Equipment:\n- Calibration errors in 3 devices\n- Impact: Data collection delayed\n- Action: Tech team en route (ETA 30 mins)\n\n2. Site D Access:\n- Security clearance pending\n- Impact: Team waiting at gate\n- Action: Escalated to site manager\n\nShould I reroute Team 3 to help at Site B?",
+            "timestamp": "9:02 AM"
+          },
+          {
+            "sender": "user",
+            "text": "How will this affect today's targets?",
+            "timestamp": "9:03 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "Target Impact Analysis:\n\nCurrent Status:\n- Original target: 20 visits\n- Completed: 15\n- At risk: 3 visits\n\nAdjusted Plan:\n1. Team 3 → Site B (support)\n2. Team 4 → covering Team 3's pending visits\n3. Extended hours: 2 teams agreed\n\nProjected Completion: 18/20 visits\nQuality metrics maintained\n\nShall I implement this revised plan?",
+            "timestamp": "9:03 AM"
+          }
+        ]
+      },
+      "monitoring": {
+        "title": "Team Monitoring",
+        "messages": [
+          {
+            "sender": "agent",
+            "text": "🌅 Morning Field Report\n\nTeams Deployed: 4\nZone: North Region\nPlanned Visits: 20\nCurrent Weather: Clear\n\nTeam Locations:\n1. Team A - Site B\n2. Team B - Site D\n3. Team C - En route\n4. Team D - Site A",
+            "timestamp": "8:30 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "⚠️ Site Alert\n\nLocation: Site B\nIssue: Equipment Calibration\nImpact: Data Collection Delayed\n\nAction Taken:\n- Tech support dispatched\n- Backup devices activated\n- Schedule adjusted",
+            "timestamp": "10:15 AM"
+          },
+          {
+            "sender": "agent",
+            "text": "📍 Midday Update\n\nVisits Completed: 12/20\nOn Schedule: Yes\nPending Sites: 8\n\nNotable Findings:\n- 2 sites require follow-up\n- 1 urgent maintenance needed\n- Traffic delays in sector 4",
+            "timestamp": "1:00 PM"
+          },
+          {
+            "sender": "agent",
+            "text": "🎯 End Day Summary\n\nCompleted Visits: 18/20\nData Collected: 95%\nEquipment Status: All Fixed\n\nTomorrow's Plan:\n- Reschedule 2 pending visits\n- Equipment maintenance\n- Team rotation planned",
+            "timestamp": "5:00 PM"
+          }
+        ]
+      }
+    }
+  }
+} 

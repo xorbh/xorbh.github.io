@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Xorworks</title>
+  <title>Xorworks - AI Agents for Business</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,16 +16,13 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -37,528 +34,497 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Xorworks</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#faqs">FAQs</a></li>
-          <!-- <li><a href="#contact">Contact</a></li> -->
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!-- <a class="btn-getstarted" href="index.html#product">Get Started</a> -->
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Co-Pilot for Operations</h1>
-            <p>Improve productivity by empowering workers to find and solve operational problems</p>
-            <div class="d-flex">
-              <!-- <a href="#product" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"></a> -->
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/ankit.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/jolene.svg" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/parinaam.svg" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/yugantar.webp" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
-    <!-- About Section -->
-    <section id="product" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Product Highlights</h2>
-        <p>Simple interface to access complex workflows</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Close the gap between execution, monitoring and reporting with Xorworks</h3>
-            <!-- <p>
-              Our system offers an intuitive chat interface that ensures a high adoption rate compared to the poor adoption typically seen with more complex web or app-based systems. This simple yet powerful interface can handle complex workflows, making it easy for teams to collaborate and manage tasks efficiently.
-            </p> -->
-            <a href="#" class="about-btn align-self-center align-self-xl-start"><span>About us</span> <i class="bi bi-chevron-right"></i></a>
-          </div>
-
-          <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-
-              <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-chat-square-text"></i>
-                <h4><a href="" class="stretched-link"> Simplified Chat Interface for Seamless Collaboration</a></h4>
-                <p>Our system offers an intuitive chat interface that ensures a high adoption rate compared to the poor adoption typically seen with more complex web or app-based systems. This simple yet powerful interface can handle complex workflows, making it easy for teams to collaborate and manage tasks efficiently.</p>
-              </div><!-- Icon-Box -->
-
-              <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-gem"></i>
-                <h4><a href="" class="stretched-link">Real-Time Group Coordination</a></h4>
-                <p>Work where the action happens. Our solution delivers reports and alerts directly into a chat group, allowing team members and managers to view updates simultaneously. This real-time coordination reduces the time to resolution, eliminating the need for weekly reviews by enabling immediate identification and resolution of issues.</p>
-              </div><!-- Icon-Box -->
-
-              <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-broadcast"></i>
-                <h4><a href="" class="stretched-link"> AI Support to Boost Productivity</a></h4>
-                <p>Enhance your team’s productivity with integrated AI modules like fraud detection and image descriptions. Our AI Co-Pilot proactively identifies issues, reporting them to both management and the team, ensuring that potential problems are addressed promptly.</p>
-              </div><!-- Icon-Box -->
-
-              <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-easel"></i>
-                <h4><a href="" class="stretched-link">Seamless Integration with Existing IT Systems</a></h4>
-                <p>Our system supports hundreds of integrations with existing IT infrastructure, allowing for a smooth transition and immediate utilization of its capabilities. Whether it's managing workflows, generating reports, or enhancing communication, our solution fits seamlessly into your current environment.</p>
-              </div><!-- Icon-Box -->
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Key Benefits</h2>
-        <p>Never hear "Work is done, its not updated in the system yet"</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <i class="bi bi-activity"></i>
-              <h4><a href="" class="stretched-link">Increased Adoption</a></h4>
-              <p>A user-friendly interface ensures widespread use</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <i class="bi bi-bounding-box-circles"></i>
-              <h4><a href="" class="stretched-link">Faster Issue Resolution</a></h4>
-              <p>Real-time updates and alerts enable immediate action</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <i class="bi bi-calendar4-week"></i>
-              <h4><a href="" class="stretched-link">Improved Productivity</a></h4>
-              <p>AI support for complex tasks boosts efficiency</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <i class="bi bi-broadcast"></i>
-              <h4><a href="" class="stretched-link">Enhanced Coordination</a></h4>
-              <p>Real-time data transparency into operations and updates</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Alt Services Section -->
-    <section id="alt-services" class="alt-services section">
-
-       <!-- Section Title -->
-       <div class="container section-title" data-aos="fade-up">
-        <h2>Case Studies</h2>
-        <p></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details">
-                <!-- <a href="#alt-services" class="stretched-link">
-                  <h3>Ankit Aero</h3>
-                </a> -->
-                <h3>Ankit Aero</h3>
-                <p>Boost productivity by empowering shop floor operators</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details">
-                <!-- <a href="#alt-services" class="stretched-link">
-                  <h3>Jolene</h3>
-                </a> -->
-                <h3>Jolene</h3>
-                <p>Track inventory from source to finish</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details">
-                <!-- <a href="#alt-services" class="stretched-link">
-                  <h3>Parinaam</h3>
-                </a> -->
-                <h3>Parinaam</h3>
-                <p>Bring education opportunities to the under privileged children</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Alt Services Section -->
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Customizable Modules</h2>
-        <p>Xorworks provides various functionalities out of the box</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="features-item">
-              <i class="bi bi-eye" style="color: #ffbb2c;"></i>
-              <h3><a href="" class="stretched-link">Log Production</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="features-item">
-              <i class="bi bi-infinity" style="color: #5578ff;"></i>
-              <h3><a href="" class="stretched-link">Receive Inventory</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="features-item">
-              <i class="bi bi-mortarboard" style="color: #e80368;"></i>
-              <h3><a href="" class="stretched-link">Monitor Progress</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="features-item">
-              <i class="bi bi-nut" style="color: #e361ff;"></i>
-              <h3><a href="" class="stretched-link">Quality Control</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="features-item">
-              <i class="bi bi-shuffle" style="color: #47aeff;"></i>
-              <h3><a href="" class="stretched-link">Fraud Detection</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="features-item">
-              <i class="bi bi-star" style="color: #ffa76e;"></i>
-              <h3><a href="" class="stretched-link">Tag inventory</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
-            <div class="features-item">
-              <i class="bi bi-x-diamond" style="color: #11dbcf;"></i>
-              <h3><a href="" class="stretched-link">Raise Tickets</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
-            <div class="features-item">
-              <i class="bi bi-camera-video" style="color: #4233ff;"></i>
-              <h3><a href="" class="stretched-link">Conduct surveys</a></h3>
-            </div>
-          </div><!-- End Feature Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Features Section -->
-
-
-    <!-- Team Section -->
-    <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/abhinav.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://x.com/abhinavgujjar"><i class="bi bi-twitter-x"></i></a>
-                  <!-- <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/abhinavgujjar/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Abhinav Gujjar</h4>
-                <span>Co-Founder</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/pranav1.jpeg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://x.com/pmaranganty"><i class="bi bi-twitter-x"></i></a>
-                  <!-- <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/pranav-maranganty-09114823/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Pranav Maranganty</h4>
-                <span>Co-Founder</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team Section -->
-
-    <!-- Faq Section -->
-    <section id="faqs" class="faq section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Product related FAQs</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>How easy is it to integrate the chat interface with our existing IT infrastructure?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Our system offers hundreds of pre-built integrations, making it simple to connect with your existing IT infrastructure for a seamless transition.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>What kind of support do you provide during the onboarding process?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              We provide comprehensive onboarding support, including identifying process improvements, customizing the modules, designing the reports, training sessions, and customer support to ensure a smooth adoption process.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>Can the chat interface handle complex workflows and tasks?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Absolutely. Our chat interface is designed to manage even the most complex tasks, streamlining workflows and eliminating the need for multiple systems.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="400">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>How does AI-powered support enhance our team's productivity?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              The integrated AI modules assist with fraud detection, automate image descriptions, provide smart insights, and proactively report issues, enabling your team to work more efficiently.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>How are daily and weekly reports delivered and accessed?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Reports are delivered directly to your chat group, allowing team members to access critical data and actionable insights instantly. We also provide a comprehensive reporting interface where you can view the reports.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>Can the chat interface be customized to fit our specific needs?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Yes, our system is highly customizable to meet the unique requirements of your organization, ensuring a tailored fit for your workflows.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-5 d-flex">
-            <i class="bi bi-question-circle"></i>
-            <h4>Is our communication within the chat interface encrypted?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Yes, all communication within the chat interface is encrypted using industry-standard encryption protocols to maintain privacy and security.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    
-  </main>
-
-  <footer id="footer" class="footer">
-
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Xorworks</strong> <span>All Rights Reserved</span></p>
+      <a class="navbar-brand" href="#">
+        <!-- <img src="assets/img/logo.svg" alt="Xorworks" height="32"> -->
+        <h3>Xorworks</h3> <!-- Temporary text until logo is available -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#agents">Meet Our Agents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cases">Success Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#contact">Get Started</a>
+          </li>
+        </ul>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://t.me/pmaranganty" target="_blank"><i class="bi bi-telegram"></i></a>
-        <a href="https://wa.me/919008468085" target="_blank"><i class="bi bi-whatsapp"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
     </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1>AI Assistant Managers for Your Business</h1>
+          <p>Transform your operations with intelligent AI agents that handle routine management tasks. From data collection and reporting to monitoring and escalations, our AI assistants work 24/7 to keep your business running smoothly.</p>
+          <div class="d-flex gap-4 mt-4">
+            <a href="#agents" class="btn btn-primary btn-lg">
+              Meet Our Agents <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="agent-cluster">
+            <!-- Main/large agent image - Meghna -->
+            <div class="agent-bubble agent-large">
+              <img src="assets/img/agents/Meghna.jpg" alt="Meghna" class="agent-img">
+            </div>
+            <!-- Medium sized agents -->
+            <div class="agent-bubble agent-medium agent-top-right">
+              <img src="assets/img/agents/Alex.jpeg" alt="Alex" class="agent-img">
+            </div>
+            <div class="agent-bubble agent-medium agent-bottom-left">
+              <img src="assets/img/agents/Jamie.jpg" alt="Arun" class="agent-img">
+            </div>
+            <!-- Small sized agent -->
+            <div class="agent-bubble agent-small agent-top-left">
+              <img src="assets/img/agents/Jhansi.jpg" alt="Jhansi" class="agent-img">
+            </div>
+            <!-- Decorative elements -->
+            <div class="floating-icon icon-1"><i class="ri-message-3-line"></i></div>
+            <div class="floating-icon icon-2"><i class="ri-bar-chart-line"></i></div>
+            <div class="floating-icon icon-3"><i class="ri-notification-line"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brief Overview Section -->
+  <section id="overview" class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="feature-card">
+            <i class="ri-24-hours-line"></i>
+            <h3>Always-On Management</h3>
+            <p>AI assistants that monitor, report, and respond to business needs around the clock</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="feature-card">
+            <i class="ri-line-chart-line"></i>
+            <h3>Data-Driven Insights</h3>
+            <p>Automated collection and analysis of key metrics for informed decision making</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="feature-card">
+            <i class="ri-customer-service-2-line"></i>
+            <h3>Smart Escalations</h3>
+            <p>Intelligent issue detection and routing to the right team members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agent Showcase -->
+  <section id="agents" class="agents">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Meet Your AI Team</h2>
+        <p>Specialized agents for every business need</p>
+      </div>
+      
+      <div class="agent-cards">
+        <div class="agent-card">
+          <div class="agent-info">
+            <div class="agent-avatar">
+              <img src="assets/img/agents/Alex.jpeg" alt="Alex">
+            </div>
+            <h3>Alex</h3>
+            <p class="role">Factory Operations Manager</p>
+            <div class="agent-skills">
+              <span>Production Tracking</span>
+              <span>Maintenance Management</span>
+              <span>Shift Reports</span>
+            </div>
+            <div class="agent-features mt-4">
+              <ul class="list-unstyled">
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Collects shift-wise production data</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Manages maintenance checklists</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Tracks maintenance issues to completion</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Generates reports for management</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary mt-4 see-demo-btn" data-agent="alex">
+              See in Action <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <div class="agent-demo" id="alex-demo" style="display: none;">
+            <div class="chat-container">
+              <div class="chat-header">
+                <h4 class="demo-title">Factory Operations Demo</h4>
+              </div>
+              <div class="chat-window" id="alex-chat">
+                <!-- Messages will be loaded here -->
+              </div>
+            </div>
+            <button class="btn btn-outline-primary mt-3 back-to-info-btn">
+              <i class="ri-arrow-left-line"></i> Back to Info
+            </button>
+          </div>
+        </div>
+
+        <div class="agent-card">
+          <div class="agent-info">
+            <div class="agent-avatar">
+              <img src="assets/img/agents/Jamie.jpg" alt="Arun">
+            </div>
+            <h3>Arun</h3>
+            <p class="role">Field Marketing Team Manager</p>
+            <div class="agent-skills">
+              <span>Marketing Analytics</span>
+              <span>Team Tracking</span>
+              <span>Impact Assessment</span>
+            </div>
+            <div class="agent-features mt-4">
+              <ul class="list-unstyled">
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Monitors daily marketing activities & plans</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Tracks team location & coverage</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Manages follow-up tasks</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Analyzes marketing impact metrics</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary mt-4 see-demo-btn" data-agent="arun">
+              See in Action <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+
+          <div class="agent-demo" id="arun-demo" style="display: none;">
+            <div class="chat-container">
+              <div class="chat-header">
+                <h4 class="demo-title">Field Marketing Demo</h4>
+              </div>
+              <div class="chat-window" id="arun-chat">
+                <!-- Messages will be loaded here -->
+              </div>
+            </div>
+            <button class="btn btn-outline-primary mt-3 back-to-info-btn">
+              <i class="ri-arrow-left-line"></i> Back to Info
+            </button>
+          </div>
+        </div>
+
+        <div class="agent-card">
+          <div class="agent-info">
+            <div class="agent-avatar">
+              <img src="assets/img/agents/Jhansi.jpg" alt="Jhansi">
+            </div>
+            <h3>Jhansi</h3>
+            <p class="role">Social Worker Manager</p>
+            <div class="agent-skills">
+              <span>Survey Management</span>
+              <span>Multilingual Support</span>
+              <span>Progress Tracking</span>
+            </div>
+            <div class="agent-features mt-4">
+              <ul class="list-unstyled">
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Conducts & manages field surveys</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Communicates in multiple languages</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Tracks activities against targets</li>
+                <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Monitors application progress</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary mt-4 see-demo-btn" data-agent="jhansi">
+              See in Action <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+          
+          <div class="agent-demo" id="jhansi-demo" style="display: none;">
+            <div class="chat-container">
+              <div class="chat-header">
+                <h4 class="demo-title">Social Work Demo</h4>
+              </div>
+              <div class="chat-window" id="jhansi-chat">
+                <!-- Messages will be loaded here -->
+              </div>
+            </div>
+            <button class="btn btn-outline-primary mt-3 back-to-info-btn">
+              <i class="ri-arrow-left-line"></i> Back to Info
+            </button>
+          </div>
+        </div>
+
+        <div class="agent-card">
+          <div class="agent-avatar">
+            <img src="assets/img/agents/Meghna.jpg" alt="Meghna">
+          </div>
+          <h3>Meghna</h3>
+          <p class="role">Field Team Coordinator</p>
+          <div class="agent-skills">
+            <span>Visit Planning</span>
+            <span>Issue Tracking</span>
+            <span>Performance Analytics</span>
+          </div>
+          <div class="agent-features mt-4">
+            <ul class="list-unstyled">
+              <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Creates & manages field visit schedules</li>
+              <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Tracks field issues to closure</li>
+              <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Generates visit completion reports</li>
+              <li><i class="ri-checkbox-circle-line text-primary me-2"></i>Alerts managers on recurring issues</li>
+            </ul>
+          </div>
+          <button class="btn btn-primary mt-4 see-demo-btn" data-agent="meghna">
+            See in Action <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+        
+        <div class="agent-demo" id="meghna-demo" style="display: none;">
+          <div class="chat-container">
+            <div class="chat-header">
+              <h4 class="demo-title">Field Team Coordination Demo</h4>
+            </div>
+            <div class="chat-window" id="meghna-chat">
+              <!-- Messages will be loaded here -->
+            </div>
+          </div>
+          <button class="btn btn-outline-primary mt-3 back-to-info-btn">
+            <i class="ri-arrow-left-line"></i> Back to Info
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>How It Works</h2>
+        <p>Simple interface, powerful results</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="timeline-icon me-3">
+                    <i class="ri-chat-smile-line"></i>
+                  </div>
+                  <h3 class="mb-0">Chat Like You Always Do</h3>
+                </div>
+                <p>No complex interfaces or training needed. Just chat with your AI agents like you would with any team member.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="timeline-icon me-3">
+                    <i class="ri-robot-line"></i>
+                  </div>
+                  <h3 class="mb-0">AI Does the Heavy Lifting</h3>
+                </div>
+                <p>Your agents handle task coordination, data analysis, and problem detection automatically.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="timeline-icon me-3">
+                    <i class="ri-link-m"></i>
+                  </div>
+                  <h3 class="mb-0">Seamless Integrations</h3>
+                </div>
+                <p>We integrate with all your existing systems to fetch data and push updates automatically, ensuring smooth data flow across your organization.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="timeline-icon me-3">
+                    <i class="ri-line-chart-line"></i>
+                  </div>
+                  <h3 class="mb-0">Track Progress in Real-time</h3>
+                </div>
+                <p>Get instant updates and insights about your operations, all in one place.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories -->
+  <section id="cases" class="cases">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Success Stories</h2>
+        <p>See how our AI agents are transforming businesses</p>
+      </div>
+
+      <div class="case-studies">
+        <!-- Ankit Aero Case -->
+        <div class="case-study">
+          <div class="case-content">
+            <span class="company-logo">
+              <img src="assets/img/clients/ankit.png" alt="Ankit Aero">
+            </span>
+            <h3>Revolutionizing Shop Floor Operations</h3>
+            <p>How AI agents helped Ankit Aero achieve 40% improvement in productivity</p>
+            <div class="metrics">
+              <div class="metric">
+                <h4>40%</h4>
+                <p>Productivity Boost</p>
+              </div>
+              <div class="metric">
+                <h4>2hrs</h4>
+                <p>Saved Daily</p>
+              </div>
+            </div>
+          </div>
+          <div class="case-visual">
+            <!-- Interactive visualization -->
+          </div>
+        </div>
+
+        <!-- More case studies -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Our Team</h2>
+        <p>Meet the people behind Xorworks</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member text-center">
+            <div class="member-img">
+              <img src="assets/img/team/abhinav.jpg" alt="Abhinav Gujjar" class="img-fluid rounded-circle mb-3">
+              <div class="social">
+                <a href="https://linkedin.com/in/abhinavgujjar"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://twitter.com/abhinavgujjar"><i class="ri-twitter-fill"></i></a>
+              </div>
+            </div>
+            <h4>Abhinav Gujjar</h4>
+            <p class="role">Co-founder & CEO</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member text-center">
+            <div class="member-img">
+              <img src="assets/img/team/Swathi.jpeg" alt="Swathi" class="img-fluid rounded-circle mb-3">
+              <div class="social">
+                <a href="https://linkedin.com/in/swathi"><i class="ri-linkedin-fill"></i></a>
+              </div>
+            </div>
+            <h4>Swathi</h4>
+            <p class="role">Co-founder & Sales Head</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member text-center">
+            <div class="member-img">
+              <img src="assets/img/team/pranav.jpeg" alt="Pranav Maranganty" class="img-fluid rounded-circle mb-3">
+              <div class="social">
+                <a href="https://linkedin.com/in/pranav-maranganty-09114823/"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://twitter.com/pmaranganty"><i class="ri-twitter-fill"></i></a>
+              </div>
+            </div>
+            <h4>Pranav Maranganty</h4>
+            <p class="role">Co-founder & CTO</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member text-center">
+            <div class="member-img">
+              <img src="assets/img/team/Nagaraj.jpg" alt="Nagaraj" class="img-fluid rounded-circle mb-3">
+              <div class="social">
+                <a href="https://linkedin.com/in/nagaraj"><i class="ri-linkedin-fill"></i></a>
+              </div>
+            </div>
+            <h4>Nagaraj</h4>
+            <p class="role">Co-founder & Head of Engineering</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="cta">
+    <div class="container text-center">
+      <h2>Ready to Transform Your Operations?</h2>
+      <p>Get started with AI agents custom-built for your business</p>
+      <a href="#contact" class="btn btn-primary btn-lg">
+        Schedule a Demo <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/img/logo.svg" alt="Xorworks" height="32" class="mb-4">
+          <p>Empowering businesses with intelligent AI agents</p>
+        </div>
+        <div class="col-lg-2">
+          <h5>Product</h5>
+          <ul class="list-unstyled">
+            <li><a href="#agents">AI Agents</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#about">About</a></li>
+            <li><a href="#cases">Case Studies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Connect</h5>
+          <div class="social-links">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <!-- Add this right before the closing </body> tag -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="ri-arrow-up-line"></i>
+  </a>
 </body>
 
 </html>
