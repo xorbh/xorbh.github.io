@@ -2199,3 +2199,360 @@ section,
   font-style: italic;
   margin: 0;
 }
+
+/* Case Studies Section */
+.case-studies {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: 60% 40%; /* Adjust ratio to 60-40 */
+  gap: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.case-content {
+  padding: 1rem;
+  max-width: 100%; /* Ensure content doesn't overflow */
+}
+
+.company-logo {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.company-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.case-content h3 {
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.metric {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(86, 130, 163, 0.05);
+  border-radius: 8px;
+}
+
+.metric h4 {
+  color: #5682a3;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric p {
+  color: var(--secondary);
+  margin: 0;
+}
+
+.case-highlights {
+  margin-top: 1.5rem;
+}
+
+.case-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.case-highlights li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: var(--secondary);
+}
+
+.case-highlights li i {
+  color: #5682a3;
+  margin-right: 0.5rem;
+}
+
+/* Case Study Visuals - Collage Style */
+.case-visual {
+  height: 480px;
+  display: flex;
+  align-items: center;
+  max-width: 100%; /* Ensure visuals don't overflow */
+}
+
+.visual-carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for smaller space */
+  grid-auto-rows: 120px; /* Slightly smaller rows */
+  gap: 2px;
+  padding: 0;
+  height: 364px; /* Adjust height: (120px * 3) + (2px * 2 gaps) */
+  width: 100%;
+}
+
+.visual-item {
+  position: relative;
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Add overlay for muted effect */
+.visual-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2); /* Subtle white overlay */
+  transition: background 0.3s ease;
+}
+
+/* Remove overlay on hover */
+.visual-item:hover::after {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Remove overlay when expanded */
+.visual-item.expanded::after {
+  display: none;
+}
+
+.visual-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.9); /* Slightly reduce saturation */
+  transition: all 0.3s ease;
+}
+
+.visual-item:hover img {
+  filter: saturate(1); /* Restore saturation on hover */
+}
+
+.visual-item.expanded img {
+  filter: none; /* Remove filter when expanded */
+}
+
+.visual-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  color: #5682a3;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Expanded state */
+.visual-item.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 1200px;
+  max-height: 90vh;
+  z-index: 1000;
+  background: white;
+  padding: 0; /* Remove padding */
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.visual-item.expanded img {
+  width: 100%;
+  height: auto;
+  max-height: calc(90vh - 3rem);
+  object-fit: contain;
+}
+
+.visual-item.expanded .visual-caption {
+  position: relative;
+  transform: none;
+  background: white;
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .case-study {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+  
+  .case-visual {
+    height: 400px;
+  }
+  
+  .visual-carousel {
+    max-width: 500px; /* Limit width on mobile */
+    margin: 0 auto;
+  }
+}
+
+/* Special layout for 6 images (Ankit case study) */
+.visual-carousel.six-images {
+  grid-template-rows: repeat(3, 120px);
+}
+
+/* Make first image span full width in regular carousel */
+.visual-carousel:not(.six-images) .visual-item:nth-child(1) {
+  grid-column: 1 / -1;
+  grid-row: span 1;
+}
+
+/* Add styles for agent attribution */
+.agent-attribution {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0.75rem;
+  background: rgba(86, 130, 163, 0.05);
+  border-radius: 8px;
+}
+
+.agent-attribution img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.agent-attribution .agent-info {
+  flex: 1;
+}
+
+.agent-attribution h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--heading-color);
+}
+
+.agent-attribution p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+/* Workflow Steps */
+.workflow-steps {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.workflow-steps h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  background: rgba(86, 130, 163, 0.03);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.step:hover {
+  background: rgba(86, 130, 163, 0.08);
+}
+
+.step i {
+  font-size: 1.5rem;
+  color: #5682a3;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.step h5 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--heading-color);
+}
+
+.step p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+/* Samantha's Quote Popup */
+.quote-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-popup.active {
+  display: flex;
+}
+
+.quote-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+  max-width: 400px;
+  margin: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote-content p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--heading-color);
+  font-style: italic;
+}
+
+.close-quote {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 0.25rem;
+  line-height: 1;
+}
+
+.close-quote:hover {
+  color: var(--heading-color);
+}

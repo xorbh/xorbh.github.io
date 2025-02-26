@@ -186,4 +186,66 @@
   // Call loadConversations when document is ready
   document.addEventListener('DOMContentLoaded', loadConversations);
 
+  // Add this to your existing main.js
+  document.addEventListener('DOMContentLoaded', function() {
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'visual-overlay';
+    document.body.appendChild(overlay);
+
+    // Handle image clicks
+    const visualItems = document.querySelectorAll('.visual-item');
+    visualItems.forEach(item => {
+      item.addEventListener('click', function() {
+        if (!this.classList.contains('expanded')) {
+          // Expand image
+          this.classList.add('expanded');
+          overlay.classList.add('active');
+        }
+      });
+    });
+
+    // Close on overlay click
+    overlay.addEventListener('click', function() {
+      const expandedItem = document.querySelector('.visual-item.expanded');
+      if (expandedItem) {
+        expandedItem.classList.remove('expanded');
+        overlay.classList.remove('active');
+      }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const expandedItem = document.querySelector('.visual-item.expanded');
+        if (expandedItem) {
+          expandedItem.classList.remove('expanded');
+          overlay.classList.remove('active');
+        }
+      }
+    });
+  });
+
+  // Samantha's LinkedIn Quote
+  document.addEventListener('DOMContentLoaded', function() {
+    const samanthaLink = document.querySelector('.samantha-linkedin');
+    const quotePopup = document.getElementById('samantha-quote');
+    const closeButton = quotePopup.querySelector('.close-quote');
+
+    samanthaLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      quotePopup.classList.add('active');
+    });
+
+    closeButton.addEventListener('click', function() {
+      quotePopup.classList.remove('active');
+    });
+
+    quotePopup.addEventListener('click', function(e) {
+      if (e.target === quotePopup) {
+        quotePopup.classList.remove('active');
+      }
+    });
+  });
+
 })();
