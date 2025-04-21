@@ -2655,3 +2655,80 @@ section,
   background-color: #128C7E;
   border-color: #128C7E;
 }
+
+/* RFQ Automation Section */
+.rfq-automation {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+}
+
+.rfq-features .feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.rfq-features .feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.rfq-features .feature-item i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-right: 1.5rem;
+}
+
+.rfq-features .feature-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.rfq-features .feature-item p {
+  margin-bottom: 0;
+  color: var(--text-color);
+}
+
+.rfq-process {
+  position: relative;
+  padding: 2rem;
+}
+
+.rfq-process img {
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.process-metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.process-metrics .metric {
+  padding: 1rem;
+}
+
+.process-metrics .metric h3 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.process-metrics .metric p {
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .rfq-process {
+    margin-top: 3rem;
+  }
+}
