@@ -2732,3 +2732,58 @@ section,
     margin-top: 3rem;
   }
 }
+
+/* Sample Image Cards */
+.sample-image-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sample-image-card:hover {
+  transform: translateY(-5px);
+}
+
+.sample-image-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.sample-image-card.h-100 img {
+  height: 100%;
+  min-height: 600px;
+}
+
+.image-caption {
+  padding: 20px;
+  flex: 1;
+}
+
+.image-caption h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.image-caption p {
+  color: #666;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 991px) {
+  .sample-image-card img {
+    height: 250px;
+  }
+  
+  .sample-image-card.h-100 img {
+    min-height: 500px;
+  }
+}
