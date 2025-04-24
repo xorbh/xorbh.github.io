@@ -64,56 +64,56 @@
       }
     }
   },
-  "arun": {
-    "title": "Field Marketing Demo",
+  "maya": {
+    "title": "RFQ Processing Demo",
     "chats": {
       "direct": {
         "title": "Direct Chat",
         "messages": [
           {
             "sender": "agent",
-            "text": "Good morning! Could you update me on your plan for today?",
+            "text": "I've detected a new RFQ from TechCorp in your email. Would you like me to help process it?",
             "timestamp": "9:00 AM"
           },
           {
             "sender": "user",
-            "text": "Yes, I'll be making college visits today",
+            "text": "Yes, please help me with that",
             "timestamp": "9:02 AM"
           },
           {
             "sender": "agent",
-            "text": "Great! I'll help you plan these visits. Could you share:\n1. Which colleges are you visiting?\n2. Their locations?\n3. Who are your points of contact?",
+            "text": "I've parsed the RFQ and need some clarifications:\n1. The delivery timeline isn't specified - what should I assume?\n2. They've requested 'latest version' - shall we quote for Version 4.2?\n3. The quantity range is 100-500 units - should we provide tiered pricing?",
             "timestamp": "9:02 AM"
           },
           {
             "sender": "user",
-            "text": "I'm visiting IIIT Bangalore first",
+            "text": "Let's quote for Version 4.2 and yes, do tiered pricing",
             "timestamp": "9:03 AM"
           },
           {
             "sender": "agent",
-            "text": "Got it - IIIT Bangalore. What time is your meeting and who will you be meeting there?",
+            "text": "Got it. For the tiered pricing, I'll structure it as:\n- 100-250 units: Standard price\n- 251-400 units: 5% discount\n- 401-500 units: 8% discount\n\nWhat delivery timeline should we commit to?",
             "timestamp": "9:03 AM"
           },
           {
             "sender": "user",
-            "text": "Meeting Prof. Sharma at 11 AM in the Computer Science department",
+            "text": "Let's say 4-6 weeks for delivery",
             "timestamp": "9:04 AM"
           },
           {
             "sender": "agent",
-            "text": "Perfect! I've noted:\n- Location: IIIT Bangalore\n- Time: 11 AM\n- Contact: Prof. Sharma, CS Dept\n\nAre there any other colleges on your schedule today? Also, could you share your live location when you start?",
+            "text": "Perfect! I'll prepare the quote with:\n- Version 4.2 specifications\n- Tiered pricing structure as discussed\n- 4-6 weeks delivery timeline\n- Standard warranty terms\n\nWould you like me to include our new predictive maintenance feature as an optional add-on?",
             "timestamp": "9:04 AM"
           },
           {
             "sender": "user",
-            "text": "Yes, I'm also visiting Christ University at 2 PM. Starting now, sharing my location.",
-            "timestamp": "10:30 AM"
+            "text": "Yes, add that as an optional item",
+            "timestamp": "9:05 AM"
           },
           {
             "sender": "agent",
-            "text": "📍 Location received - you're 15 mins away from IIIT Bangalore.\n\nI've updated your schedule:\n1. IIIT Bangalore - 11 AM\n2. Christ University - 2 PM\n\nI'll send you traffic updates and remind you 30 mins before each meeting.\n\nI've also shared this plan in the team monitoring group.",
-            "timestamp": "10:30 AM"
+            "text": "I'll draft the full quotation now. I've also updated the team monitoring channel about this new RFQ. I'll have the draft ready for your review in 30 minutes. Would you like me to highlight any specific aspects in the executive summary?",
+            "timestamp": "9:05 AM"
           }
         ]
       },
@@ -122,23 +122,23 @@
         "messages": [
           {
             "sender": "agent",
-            "text": "📋 Daily Plan Update\n\nTeam Member: Marketing Executive\nToday's Schedule:\n\n1. IIIT Bangalore\n   - Time: 11 AM\n   - Contact: Prof. Sharma (CS Dept)\n   - Objective: Product Presentation\n\n2. Christ University\n   - Time: 2 PM\n   - Location: Main Campus\n   - Objective: Initial Discussion\n\n📍 Live tracking enabled\nEstimated coverage: 2 major institutions",
+            "text": "📥 New RFQ Alert\n\nClient: TechCorp\nProduct: Enterprise Solution v4.2\nQuantity: 100-500 units\nStatus: Under Processing\n\nKey Requirements:\n- Latest version requested\n- Volume-based pricing needed\n- Technical specs matched\n\nPriority: High\nAssigned to: Sales Team",
             "timestamp": "9:15 AM"
           },
           {
             "sender": "agent",
-            "text": "🎯 Visit Update - IIIT Bangalore\n\nStatus: Completed ✅\nKey Outcomes:\n- Successful product presentation\n- Requirement: Detailed proposal\n- Timeline: Due next week\n- Potential Value: High\n\n📍 Currently en route to Christ University\nETA: 25 minutes",
-            "timestamp": "12:45 PM"
+            "text": "📊 RFQ Processing Update\n\nQuotation Details Confirmed:\n- Version 4.2 specifications\n- Tiered pricing structure\n- 4-6 weeks delivery\n- Optional: Predictive maintenance\n\nStatus: Draft in progress\nETA: 30 minutes",
+            "timestamp": "9:30 AM"
           },
           {
             "sender": "agent",
-            "text": "🎯 Visit Update - Christ University\n\nStatus: Completed ✅\nKey Outcomes:\n- Positive initial discussion\n- Next Step: Product demo\n- Timeline: Next month\n- Interest Level: High\n\n📊 Daily Summary:\n- Visits Completed: 2/2\n- New Opportunities: 2\n- Follow-up Tasks Created: 2",
-            "timestamp": "3:30 PM"
+            "text": "📝 Quote Draft Complete\n\nHighlights:\n- Base configuration\n- 3-tier pricing model\n- Value-add options\n- Delivery schedule\n\nPending: Final review\nNext Step: Internal approval",
+            "timestamp": "10:00 AM"
           },
           {
             "sender": "agent",
-            "text": "📝 Task Creation Alert\n\nNew tasks created:\n\n1. IIIT Bangalore Proposal\n   - Owner: Marketing Team\n   - Deadline: Next week\n   - Priority: High\n\n2. Christ University Demo\n   - Timeline: Next month\n   - Status: Planning\n   - Type: Product Demo\n\n👥 Team members have been notified\nPlease acknowledge and update task status in project tracker.",
-            "timestamp": "4:00 PM"
+            "text": "✅ Quote Ready for Review\n\nDocument Details:\n- Reference: QT-TC-2024-001\n- Total Pages: 12\n- Technical Specs: Complete\n- Commercial Terms: Verified\n\nAction Required:\n- Technical review\n- Commercial approval\n- Final sign-off",
+            "timestamp": "10:30 AM"
           }
         ]
       }
